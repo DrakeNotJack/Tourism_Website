@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻 - Manyou Holiday</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Manyou Holiday</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页 (Home)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">服务 (Services)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="news.html">新闻 (News)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">关于我们 (About Us)</a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">联系我们 (Contact Us)</a>
+            </div>
+        </div>
+    </nav>
+
+    <h2 class="text-center mt-4">我们的旅游服务</h2>
+
+    <!-- 标签按钮 -->
+    <div class="container mt-4">
+        <!-- 按钮部分 -->
+        <div class="button-group text-center">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="singapore">新加坡</button>
+            <button class="filter-btn" data-filter="japan">日本</button>
+            <button class="filter-btn" data-filter="europe">欧洲</button>
+            <button class="filter-btn" data-filter="thailand">泰国</button>
+            <button class="filter-btn" data-filter="vietnam">越南</button>
+            <button class="filter-btn" data-filter="cambodia">柬埔寨</button>
+        </div>
+    </div>
+
+    <!-- 栏目部分 -->
+    <section class="container mt-5">
+        <div class="row">
+            <!-- 新加坡栏目 -->
+            <div class="col-md-4 item singapore">
+                <div class="card mb-4">
+                    <img src="images/singapore.jpg" class="card-img-top" alt="新加坡">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="singapore-trip.html" class="text-dark font-weight-bold">探索新加坡的精彩之旅</a>
+                        </h5>
+                        <p class="card-text">10/17/2024</p>
+                        <p class="card-text">加入我们的新加坡本地旅游团，体验这个现代与传统完美结合的城市，享受美食、购物与文化的多重魅力。</p>
+                        <!-- 标签 -->
+                        <div class="tags">
+                            <span class="tag">新加坡</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 日本栏目 -->
+            <div class="col-md-4 item japan">
+                <div class="card mb-4">
+                    <img src="images/tokyo.jpg" class="card-img-top" alt="日本东京">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="tokyo-trip.html" class="text-dark font-weight-bold">探索日本东京的精彩之旅</a>
+                        </h5>
+                        <p class="card-text">10/17/2024</p>
+                        <p class="card-text">加入我们的东京旅游团，体验这个现代与传统完美结合的城市，享受美食、购物与文化的多重魅力。</p>
+                        <!-- 标签 -->
+                        <div class="tags">
+                            <span class="tag">日本</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 欧洲栏目 -->
+            <div class="col-md-4 item europe">
+                <div class="card mb-4">
+                    <img src="images/europe.jpg" class="card-img-top" alt="欧洲">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="europe-trip.html" class="text-dark font-weight-bold">浪漫欧洲之旅：巴黎、罗马、巴塞罗那三城游</a>
+                        </h5>
+                        <p class="card-text">10/17/2024</p>
+                        <p class="card-text">畅游欧洲最具魅力的三大城市，感受巴黎的浪漫、罗马的历史以及巴塞罗那的艺术气息，一次旅行三重享受。</p>
+                        <!-- 标签 -->
+                        <div class="tags">
+                            <span class="tag">欧洲</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 东南亚栏目 -->
+            <div class="col-md-4 item thailand vietnam cambodia">
+                <div class="card mb-4">
+                    <img src="images/southeast-asia.jpg" class="card-img-top" alt="东南亚">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="southeast-asia-trip.html" class="text-dark font-weight-bold">东南亚探险之旅：泰国、越南、柬埔寨三国游</a>
+                        </h5>
+                        <p class="card-text">10/17/2024</p>
+                        <p class="card-text">一次旅行，探访东南亚三大热门目的地，感受泰国的热情、越南的悠闲与柬埔寨的神秘文化。</p>
+                        <!-- 标签 -->
+                        <div class="tags">
+                            <span class="tag">泰国</span>
+                            <span class="tag">越南</span>
+                            <span class="tag">柬埔寨</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 页脚 -->
+    <footer class="bg-light text-center mt-5 py-4">
+        <p>&copy; 2024 Manyou Holiday. All rights reserved.</p>
+    </footer>
+
+    <!-- 引入 Bootstrap 和自定义 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

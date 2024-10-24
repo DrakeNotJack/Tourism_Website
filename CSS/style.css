@@ -1,0 +1,266 @@
+/* 自定义样式 */ 
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* 浅橙色背景样式 */
+.bg-light-orange {
+    background-color: #ffcc99; /* 浅橙色背景 */
+}
+
+/* 导航栏样式 */
+.navbar {
+    margin-bottom: 20px; /* 导航栏与内容之间的间距 */
+}
+
+header {
+    background-image: url('images/header-background.jpg'); /* 添加背景图 */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.banner {
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.5rem;
+}
+
+.card img {
+    height: 200px; /* 设定图片高度 */
+    object-fit: cover; /* 保持图片比例 */
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0; /* 增加页脚的上下内边距 */
+}
+
+/* 轮播图样式 */
+.carousel-item {
+    height: 50vh; /* 默认轮播图高度为屏幕高度的50% */
+}
+
+.carousel-item img {
+    width: 100%; /* 图片宽度占满整个轮播项 */
+    height: 100%; /* 图片高度占满整个轮播项 */
+    object-fit: cover; /* 保持图片比例，并裁剪适应容器 */
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 40vh; /* 在小屏幕上高度为40%视口高度 */
+    }
+}
+
+
+/* 卡片样式 */
+.card {
+    border: none; /* 去掉卡片边框 */
+    border-radius: 10px; /* 圆角 */
+    overflow: hidden; /* 保证内容不会超出边框 */
+}
+
+/* 社交媒体按钮样式 */
+.social-button {
+    border: 2px solid #ffcc99; /* 外圈橙色细线 */
+    border-radius: 50%; /* 圆形 */
+    margin: 0 5px; /* 按钮之间的间距 */
+    display: flex; /* 使图标居中 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    width: 2.5rem; /* 使用rem单位控制按钮大小 */
+    height: 2.5rem;
+    background-color: #ffcc99; /* 中间填充颜色 */
+    transition: background-color 0.3s, filter 0.3s; /* 添加过渡效果 */
+}
+
+.social-button img {
+    width: 1.25rem; /* 图标大小为按钮的一半 */
+    height: 1.25rem;
+    filter: brightness(0) saturate(100%) invert(74%) sepia(92%) saturate(4000%) hue-rotate(356deg) brightness(93%) contrast(104%); /* 橙色效果 */
+}
+
+.social-button:hover {
+    background-color: #ff9966; /* 悬浮时中间颜色变为深橙色 */
+}
+
+.social-button:hover img {
+    filter: brightness(0) invert(1); /* 悬浮时图标变为白色 */
+}
+
+/* 媒体查询：在屏幕宽度小于768px时 */
+@media (max-width: 768px) {
+    h3 {
+        font-size: 1.5rem; /* 在小屏幕上减小标题大小 */
+    }
+
+    .navbar {
+        flex-direction: column; /* 导航栏在小屏幕上垂直排列 */
+    }
+    
+    .social-button {
+        width: 2rem; /* 小屏幕下按钮变小 */
+        height: 2rem;
+    }
+
+    .social-button img {
+        width: 1rem; /* 小屏幕下图标更小 */
+        height: 1rem;
+    }
+}
+
+/* 表单样式 */
+form {
+    max-width: 600px; /* 限制表单宽度 */
+    margin: auto; /* 水平居中 */
+}
+
+.form-label {
+    font-weight: bold; /* 标签加粗 */
+}
+
+/* “联系我们”按钮样式 */
+.btn-contact {
+    position: relative; /* 确保可以使用 ::before 伪元素定位 */
+    border-radius: 20px; /* 圆角按钮 */
+    background-color: #ffcc99; /* 按钮背景色 */
+    color: white; /* 按钮文字颜色 */
+    padding: 10px 20px; /* 内边距 */
+    font-size: 1rem; /* 固定按钮文字大小 */
+    display: inline-block; /* 确保按钮是块级元素 */
+    border: 2px solid transparent; /* 初始边框为透明 */
+    text-align: center; /* 文字居中 */
+    z-index: 1; /* 确保文字位于最上层 */
+}
+
+.btn-contact::before {
+    content: ''; /* 创建伪元素 */
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 20px; /* 与按钮相同的圆角 */
+    background-color: #ffcc99; /* 保持与按钮相同的背景颜色 */
+    z-index: -1; /* 伪元素位于按钮下方 */
+    transition: transform 0.2s ease; /* 过渡效果 */
+    transform: scale(1); /* 默认状态 */
+}
+
+.btn-contact:hover::before {
+    transform: scale(1.05); /* 鼠标悬浮时放大外圈 */
+}
+
+.btn-contact:hover {
+    color: white; /* 保持文字颜色为白色 */
+}
+
+/* 避免按钮文本变大 */
+.btn-contact span {
+    display: inline-block; /* 确保文本作为块元素存在 */
+    font-size: 1rem; /* 保持文字的固定大小 */
+}
+
+
+
+footer .text-start strong {
+    font-size: 1.5rem; /* 增大“公司”标题的字号 */
+    color: #333; /* 设置字体颜色，可以根据需要调整 */
+}
+
+footer .text-start a {
+    display: inline-block; /* 让链接成为块元素，便于调整样式 */
+    font-size: 1.2rem; /* 增大链接的字号 */
+    color: #007bff; /* 设置链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    margin: 5px 0; /* 增加上下间距 */
+    transition: color 0.3s; /* 增加悬浮时的过渡效果 */
+}
+
+footer .text-start a:hover {
+    color: #0056b3; /* 悬浮时改变链接颜色 */
+}
+
+
+.item {
+    display: none; /* 默认隐藏所有内容 */
+}
+
+.item.active {
+    display: block; /* 只有带有.active类的内容会显示 */
+}
+
+
+
+
+/* 按钮组样式 */
+.button-group {
+    margin-bottom: 20px;
+}
+
+/* 按钮样式 */
+.filter-btn {
+    background-color: #f0f0f0;
+    border: none; /* 移除外边框 */
+    color: #333; /* 按钮文字颜色 */
+    padding: 10px 20px; /* 调整按钮内边距 */
+    margin: 0 10px; /* 按钮之间的水平间隔 */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px; /* 圆角 */
+}
+
+/* 当前激活的按钮 */
+.filter-btn.active {
+    background-color: #ffffff; /* 激活按钮的背景 */
+    color: #000; /* 激活按钮的文字颜色 */
+}
+
+/* 所有按钮悬浮时颜色为#dcdcdc，文字保持原样 */
+.filter-btn:hover {
+    background-color: #dcdcdc;
+    color: #333; /* 悬浮时保持文字颜色不变 */
+}
+
+/* 非激活按钮的默认背景颜色 */
+.filter-btn:not(.active) {
+    background-color: #f0f0f0; /* 非激活按钮的背景 */
+}
+
+/* 非激活按钮悬浮时颜色变为#dcdcdc */
+.filter-btn:not(.active):hover {
+    background-color: #dcdcdc; /* 非激活状态时悬浮颜色 */
+    color: #333; /* 文字颜色保持不变 */
+}
+
+
+
+
+/* 标签栏目的样式 */
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e0e0e0;
+    color: #333;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+
+.contact-info {
+    margin-top: 30px; /* 或根据需要调整 */
+}

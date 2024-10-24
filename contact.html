@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - Manyou Holiday</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Manyou Holiday</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页 (Home)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">服务 (Services)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">新闻 (News)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">关于我们 (About Us)</a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">联系我们 (Contact Us)</a>
+            </div>
+        </div>
+    </nav>
+
+  <!-- 联系部分 -->
+    <section class="container mt-5">
+        <h2 class="text-center mb-4">联系我们</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">电子邮件</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">消息</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Subject" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-6 mt-4 contact-info">
+                <h3>漫游假日</h3>
+                <p>无论是轻松的城市漫步，还是大自然中的探险，漫游假日都为您量身定制难忘的假期。我们坚信，旅行不仅是目的地的抵达，更是旅途中的每一个瞬间。通过专业的团队和贴心的服务，漫游假日为您打造一段与众不同的旅行体验。</p>
+                <p><strong>电话:</strong> +65 80689388 / +65 88565700</p>
+                <p><strong>邮箱:</strong> info@manyouholiday.com</p>
+                <p><strong>地址:</strong> 360 Main Rd, Singapore</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-light text-center mt-5 py-4">
+        <p>&copy; 2024 Manyou Holiday. All rights reserved.</p>
+    </footer>
+
+    <!-- 引入 Bootstrap 和自定义 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
